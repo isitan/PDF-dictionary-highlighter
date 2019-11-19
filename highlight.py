@@ -24,7 +24,7 @@ for dictionary_file in dictionary_file_names:
     setMaker(dictionary_file)
 
 ### READ IN PDF
-doc = fitz.open("hola.pdf")
+doc = fitz.open("./document-inputs/hola.pdf")
 
 for page in doc:
     page_text = page.getText("words",flags=None)
@@ -33,7 +33,7 @@ for page in doc:
         wordListProcessor(wordList, page)
 
 ### OUTPUT
-doc.save("hltedhola.pdf", garbage=4, deflate=True, clean=True)
+doc.save("./document-outputs/hltedhola.pdf", garbage=4, deflate=True, clean=True)
 
 
 
