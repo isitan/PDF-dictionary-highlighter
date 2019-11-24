@@ -18,7 +18,7 @@ def setMaker(file_name):
         lookup_set.add(entry[:-1].strip())
 
 # dictionary files, expand the list with your dictionaries.
-dictionary_file_names = ["names.txt", "locations.txt"]
+dictionary_file_names = ["./dictionaries/names.txt", "./dictionaries/locations.txt"]
 
 for dictionary_file in dictionary_file_names:
     setMaker(dictionary_file)
